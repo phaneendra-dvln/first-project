@@ -1,1 +1,2 @@
 # first-project
+FIRST TEXT WRITTEN IN MASTER
