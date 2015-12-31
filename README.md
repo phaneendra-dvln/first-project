@@ -1,2 +1,2 @@
 # first-project
-EDIT IN SLAVE
+FIRST TEXT WRITTEN IN MASTER
