@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin: 0; 
+padding: 0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+p {
+  color: #f1f1f1;
+}
+
+.goTop {
+position: fixed;
+width: 50px;
+height: 50px;
+background: #999;
+right: 40px;
+top: 50%;
+}
+
+.show {
+  display: none;
+  -webkit-transition: all eas-in 2s;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(':button').click(function() {
+   var newdiv = { 
+     id: 'newDiv'
+   }
+
+    var test = $('<div></div>',  newdiv);
+    $('body').append(test);
+  });
+});
+</script>
+</head>
+<body>
+
+<p>PHP Exercises</p>
+
+<p>Python Exercises</p>
+
+<p>JavaScript Exercises</p>
+
+<p>jQuery Exercises</p>
+
+<button>add</button>
+</body>
+</html> 
+
